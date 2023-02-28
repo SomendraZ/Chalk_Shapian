@@ -1,0 +1,38 @@
+/* .bg {
+  background-color: black;
+  margin-top: 10vw;
+  height: 47.5vw;
+  width: 95vw;
+  margin: 0 2.5vw;
+  margin-top: 2.5vw;
+  border: 0;
+  box-shadow: 0px 0.3vw 0.2vw #ffffff;
+  border-radius: 2vw 2vw 0 0;
+}
+.gif {
+  background: #1e1e1e;
+  box-shadow: 0.1vw 0.3vw 0.2vw #fff500;
+  height: 45vw;
+  width: 90vw;
+  margin: 0 2.5vw;
+  border-radius: 0px 0px 2vw 2vw;
+  display: flex;
+  flex-direction: row;
+}
+#Gif {
+  height: 45vw;
+  align-content: center;
+  margin: 0 4.5vw;
+}
+.signUpPage {
+  width: 50vw;
+  height: 45vw;
+  background: conic-gradient(
+    from 221.94deg at 50% 50%,
+    #14ff00 -98.91deg,
+    #fff500 84.7deg,
+    #14ff00 261.09deg,
+    #fff500 444.7deg
+  );
+  border-radius: 0 0 2vw 0;
+} */

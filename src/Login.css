@@ -1,0 +1,86 @@
+.bg {
+  background-color: black;
+  margin-top: 10vw;
+  height: 47.5vw;
+  width: 95vw;
+  margin: 0 2.5vw;
+  margin-top: 2.5vw;
+  border: 0;
+  box-shadow: 0px 0.3vw 0.2vw #ffffff;
+  border-radius: 2vw 2vw 0 0;
+}
+.gif {
+  background: #1e1e1e;
+  box-shadow: 0.1vw 0.3vw 0.2vw #fff500;
+  height: 45vw;
+  width: 90vw;
+  margin: 0 2.5vw;
+  border-radius: 0 0 2vw 2vw;
+  display: flex;
+  flex-direction: row;
+}
+#Gif {
+  height: 45vw;
+  align-content: center;
+  margin: 0 4.5vw;
+}
+.loginPage {
+  width: 50vw;
+  height: 41vw;
+  background: conic-gradient(
+    from 221.94deg at 50% 50%,
+    #14ff00 -98.91deg,
+    #fff500 84.7deg,
+    #14ff00 261.09deg,
+    #fff500 444.7deg
+  );
+  border-radius: 0 0 2vw 0;
+  padding: 2vw 1vw  ;
+}
+.loginToAccount {
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  text-shadow: 0px 0.2vw 0.3vw rgba(0, 0, 0, 0.4);
+  font-size: 2.5vw;
+}
+.emailLogin,
+.passwordLogin {
+  font-family: "Marvel", sans-serif;
+  font-weight: 700;
+  font-size: 1.6vw;
+  color: #000000;
+  text-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.4);
+}
+#emailLogin,
+#passwordLogin {
+  background: #d9d9d9;
+  width: 30vw;
+  height: 2.7vw;
+  border: 0;
+  border-radius: 0.3vw;
+  font-family: "Marvel", sans-serif;
+  color: #2b2b2b;
+  font-size: 1.5vw;
+  font-weight: 700;
+  padding-left: 1vw;
+  box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+  margin-bottom: 1vw;
+}
+.remember {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  font-family: "Marvel", sans-serif;
+  font-weight: 700;
+  font-size: 1.3vw;
+  color: #000000;
+  text-shadow: 0 0.2vw 0.3vw rgba(0, 0, 0, 0.4);
+}
+#check{
+    border: none;
+    height: 1.3vw;
+    width: 1.3vw;
+}
+
+/* font-family: 'Marvel', sans-serif; */
