@@ -111,7 +111,7 @@ hr {
   width: 15.5vw;
   background-color: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
   align-items: center;
   justify-content: center;
   margin: 0 1.5vw;

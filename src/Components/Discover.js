@@ -4,23 +4,23 @@ import "../Discover.css";
 
 
 const Discover = () => {
-  const [style1, setStyle1] = useState("cont11");
-  const [style2, setStyle2] = useState("cont22");
-  const [style3, setStyle3] = useState("cont22");
+  const [style1, setStyle1] = useState("cont1");
+  const [style2, setStyle2] = useState("cont2");
+  const [style3, setStyle3] = useState("cont2");
   const changeStyle1 = () => {
-    setStyle1("cont11");
-    setStyle2("cont22");
-    setStyle3("cont22");
+    setStyle1("cont1");
+    setStyle2("cont2");
+    setStyle3("cont2");
   };
   const changeStyle2 = () => {
-    setStyle1("cont22"); 
-    setStyle2("cont11");
-    setStyle3("cont22");
+    setStyle1("cont2"); 
+    setStyle2("cont1");
+    setStyle3("cont2");
   };
   const changeStyle3 = () => {
-    setStyle1("cont22");
-    setStyle2("cont22");
-    setStyle3("cont11");
+    setStyle1("cont2");
+    setStyle2("cont2");
+    setStyle3("cont1");
   };
   return (
     <>
@@ -34,6 +34,7 @@ const Discover = () => {
             <option value="faces">Faces</option>
             <option value="architectures">Architectures</option>
             <option value="weopons">Weopons</option>
+            <option value="others">Others</option>
             <option value="shapianSpecial">Shapian's Special</option>
           </select>
           <div className="searchBar">
@@ -48,7 +49,7 @@ const Discover = () => {
             </div>
             <div className={style2} id="photos" onClick={changeStyle2}>
               Photos
-            </div>
+            </div> 
             <div className={style3} id="videos" onClick={changeStyle3}>
               Videos
             </div>

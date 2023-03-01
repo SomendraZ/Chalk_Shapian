@@ -1,5 +1,5 @@
 @media only screen and (min-width: 550px) {
-  .cont11 {
+  .cont1 {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -12,7 +12,7 @@
     padding: 0.2vw 1.3vw;
     cursor: pointer;
   }
-  .cont22 {
+  .cont2 {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -29,8 +29,8 @@
     background: #000000;
     border-radius: 1.5vw 1.5vw 0px 0px;
     width: 96vw;
+    margin: 0 2vw;
     margin-top: 0.7vw;
-    margin-left: 2vw;
   }
   .discoverBar {
     width: 75vw;
