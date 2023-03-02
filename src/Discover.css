@@ -1,5 +1,5 @@
 @media only screen and (min-width: 550px) {
-  .cont1 {
+  .cont11 {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -12,7 +12,7 @@
     padding: 0.2vw 1.3vw;
     cursor: pointer;
   }
-  .cont2 {
+  .cont22 {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -75,7 +75,7 @@
     background-position: right 1vw top 50%;
     background-size: 0.7vw;
   }
-  .lol {
+  .lola {
     display: flex;
     flex-direction: row;
     height: 2.5vw;
@@ -252,7 +252,7 @@
     margin-left: 0.5vw;
     cursor: pointer;
   }
-  .lol {
+  .lola {
     display: flex;
     flex-direction: row;
     height: 3.3vw;

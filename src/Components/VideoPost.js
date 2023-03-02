@@ -1,26 +1,28 @@
-import React from "react";
-import "../PhotoPost.css";
+import React from 'react';
+import '../VideoPost.css';
 
-const PhotoPost = () => {
+const VideoPost = () => {
   return (
     <>
-      <div className="photo">
-        <div className="photoDetails">
-          <div className="photoImage">
+      <div className="video">
+        <div className="videoDetails">
+          <div className="videoImage">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png"
               alt=""
-              id="photoImage"
+              id="videoImage"
             />
-            Add Image Link
+            Add Video Cover Link
           </div>
-          <div className="photoRight">
-            <div className="imageTitle">Post Title :</div>
-            <input id="imageTitle" placeholder="Image Title" />
-            <div className="imageToolsUsed">Tools Used :</div>
-            <input id="imageToolsUsed" placeholder="Tools Used" />
-            <div className="imageArtist">Artist Name :</div>
-            <input id="imageArtist" placeholder="Artist Name" />
+          <div className="videoRight">
+            <div className="videoTitle">Post Title :</div>
+            <input id="videoTitle" placeholder="Video Title" />
+            <div className="videoLink">Video Link :</div>
+            <input id="videoLink" placeholder="Video Link" />
+            <div className="videoToolsUsed">Tools Used :</div>
+            <input id="videoToolsUsed" placeholder="Tools Used" />
+            <div className="videoArtist">Artist Name :</div>
+            <input id="videoArtist" placeholder="Artist Name" />
           </div>
         </div>
         <div id="filters">Filters :</div>
@@ -51,13 +53,13 @@ const PhotoPost = () => {
           </label>
         </div>
         <div className="description">
-          <div className="photoDescription">Description :</div>
-          <textarea id="photoDescription" placeholder="Description" />
+          <div className="videoDescription">Description :</div>
+          <textarea id="videoDescription" placeholder="Description" />
         </div>
         <div className="post">POST</div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PhotoPost;
+export default VideoPost

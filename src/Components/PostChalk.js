@@ -1,33 +1,35 @@
 import React,{useState} from "react";
 import "../PostChalk.css";
 import PhotoPost from "./PhotoPost";
+import VideoPost from "./VideoPost";
 
 const PostChalk = () => {
-  const [style1, setStyle1] = useState("cont1");
-  const [style2, setStyle2] = useState("cont2");
-  const changeStyle1 = () => {
-    setStyle1("cont1");
-    setStyle2("cont2");
+  const [style111, setStyle111] = useState("cont111");
+  const [style222, setStyle222] = useState("cont222");
+  const changeStyle111 = () => {
+    setStyle111("cont111");
+    setStyle222("cont222");
   };
-  const changeStyle2 = () => {
-    setStyle1("cont2");
-    setStyle2("cont1");
+  const changeStyle222 = () => {
+    setStyle111("cont222");
+    setStyle222("cont111");
   };
   return (
     <>
       <div id="name">
         <div className="postBar">
           <div className="postYourChalk">Post Your “CHALK”</div>
-          <div className="lol">
-            <div className={style1} id="photo" onClick={changeStyle1}>
-              Photo
+          <div className="lolala">
+            <div className={style111} id="image" onClick={changeStyle111}>
+              Image
             </div>
-            <div className={style2} id="video" onClick={changeStyle2}>
+            <div className={style222} id="video" onClick={changeStyle222}>
               Video
             </div>
           </div>
         </div>
-        <PhotoPost/>
+        {/* <PhotoPost/> */}
+        <VideoPost/>
       </div>
     </>
   );

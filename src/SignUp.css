@@ -25,7 +25,7 @@
     margin: 0 4.5vw;
   }
   .SignUpPage {
-    width: 50vw;
+    width: 38vw;
     height: 41vw;
     background: conic-gradient(
       from 221.94deg at 50% 50%,
@@ -114,7 +114,7 @@
   }
   .SignUpBtn:active {
     background-color: #1877f2;
-    box-shadow: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0.7);
+    box-shadow: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0);
     transform: translateY(1vh);
   }
   .hLine {

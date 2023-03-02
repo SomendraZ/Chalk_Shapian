@@ -4,23 +4,23 @@ import "../Discover.css";
 
 
 const Discover = () => {
-  const [style1, setStyle1] = useState("cont1");
-  const [style2, setStyle2] = useState("cont2");
-  const [style3, setStyle3] = useState("cont2");
-  const changeStyle1 = () => {
-    setStyle1("cont1");
-    setStyle2("cont2");
-    setStyle3("cont2");
+  const [style11, setStyle11] = useState("cont11");
+  const [style22, setStyle22] = useState("cont22");
+  const [style33, setStyle33] = useState("cont22");
+  const changeStyle11 = () => {
+    setStyle11("cont11");
+    setStyle22("cont22");
+    setStyle33("cont22");
   };
-  const changeStyle2 = () => {
-    setStyle1("cont2"); 
-    setStyle2("cont1");
-    setStyle3("cont2");
+  const changeStyle22 = () => {
+    setStyle11("cont22"); 
+    setStyle22("cont11");
+    setStyle33("cont22");
   };
-  const changeStyle3 = () => {
-    setStyle1("cont2");
-    setStyle2("cont2");
-    setStyle3("cont1");
+  const changeStyle33 = () => {
+    setStyle11("cont22");
+    setStyle22("cont22");
+    setStyle33("cont11");
   };
   return (
     <>
@@ -33,7 +33,7 @@ const Discover = () => {
             <option value="creativeDesign">Creative Design</option>
             <option value="faces">Faces</option>
             <option value="architectures">Architectures</option>
-            <option value="weopons">Weopons</option>
+            <option value="weapons">Weapons</option>
             <option value="others">Others</option>
             <option value="shapianSpecial">Shapian's Special</option>
           </select>
@@ -43,14 +43,14 @@ const Discover = () => {
             <i class="fa fa-search" />
             </button>
           </div>
-          <div className="lol">
-            <div className={style1} id="all" onClick={changeStyle1}>
+          <div className="lola">
+            <div className={style11} id="all" onClick={changeStyle11}>
               All
             </div>
-            <div className={style2} id="photos" onClick={changeStyle2}>
+            <div className={style22} id="photos" onClick={changeStyle22}>
               Photos
             </div> 
-            <div className={style3} id="videos" onClick={changeStyle3}>
+            <div className={style33} id="videos" onClick={changeStyle33}>
               Videos
             </div>
           </div>
