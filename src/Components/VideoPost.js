@@ -1,5 +1,5 @@
 import React from 'react';
-import '../VideoPost.css';
+import '../CSS/VideoPost.css';
 
 const VideoPost = () => {
   return (
@@ -16,7 +16,7 @@ const VideoPost = () => {
           </div>
           <div className="videoRight">
             <div className="videoTitle">Post Title :</div>
-            <input id="videoTitle" placeholder="Video Title" />
+            <input id="videoTitle" placeholder="Post Title" />
             <div className="videoLink">Video Link :</div>
             <input id="videoLink" placeholder="Video Link" />
             <div className="videoToolsUsed">Tools Used :</div>

@@ -1,9 +1,9 @@
 @media only screen and (min-width: 550px) {
   .videoDetails {
-    margin-top: 1vw;
+    margin-top: 3vw;
     display: flex;
     flex-direction: row;
-    height: 17vw;
+    height: 22.5vw;
     justify-content: space-evenly;
   }
   .videoImage {
@@ -16,16 +16,16 @@
     font-weight: 700;
     background-color: aliceblue;
     border-radius: 1.3vw;
-    height: 17vw;
-    width: 14vw;
+    height: 22.5vw;
+    width: 17.5vw;
   }
   .videoRight {
     display: flex;
-    height: 17vw;
+    height: 22.5vw;
     flex-direction: column;
   }
   #videoImage {
-    height: 10vw;
+    height: 15vw;
   }
   .videoTitle,
   .videoToolsUsed,
@@ -34,7 +34,7 @@
     color: aliceblue;
     font-family: "Marvel", sans-serif;
     font-weight: 700;
-    font-size: 1.6vw;
+    font-size: 1.75vw;
     text-shadow: 0 0.2vw 0.2vw rgba(255, 255, 255, 0.5);
     margin-bottom: 0.5vw;
     line-height: 1;
@@ -64,6 +64,7 @@
     font-weight: 700;
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 0.5vw;
     margin-left: 20vw;
     margin-top: 0.5vw;
     width: 70vw;
@@ -91,14 +92,14 @@
     width: 60vw;
     max-width: 60vw;
     min-width: 60vw;
-    height: 4vw;
-    max-height: 5.6vw;
-    min-height: 5.6vw;
+    height: 9vw;
+    max-height: 9vw;
+    min-height: 9vw;
     border: 0;
     border-radius: 0.3vw;
     font-family: "Marvel", sans-serif;
     color: #2b2b2b;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-weight: 700;
     padding-top: 0.4vw;
     padding-left: 1vw;
@@ -152,12 +153,13 @@
     font-weight: 700;
     background-color: aliceblue;
     border-radius: 1.3vw;
-    height: 17.5vh;
-    width: 30vw;
+    height: 20vh;
+    width: 35vw;
   }
   .videoRight {
     display: flex;
     flex-direction: column;
+    margin-top: 1vh;
   }
   #videoImage {
     height: 25vw;

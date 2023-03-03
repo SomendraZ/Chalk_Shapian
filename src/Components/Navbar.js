@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Chalk from "./Resources/chalk_shapian.PNG";
-import Profile from "./Resources/profile.png";
-import "../Navbar.css";
+import Chalk from "../Resources/chalk_shapian.PNG";
+import Profile from "../Resources/profile.png";
+import "../CSS/Navbar.css";
 
 const Navbar = () => {
   const [style1, setStyle1] = useState("cont1");

@@ -1,6 +1,6 @@
 import React from "react";
-import "../Login.css";
-import Gif from "./Resources/Chalk_Shapian.gif";
+import "../CSS/Login.css";
+import Gif from "../Resources/Chalk_Shapian.gif";
 
 const Login = () => {
   return (

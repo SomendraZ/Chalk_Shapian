@@ -1,6 +1,6 @@
 import React from "react";
-import "../SignUp.css";
-import Gif from "./Resources/Chalk_Shapian.gif";
+import "../CSS/SignUp.css";
+import Gif from "../Resources/Chalk_Shapian.gif";
 
 const SignUp = () => {
   return (

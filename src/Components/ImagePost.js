@@ -1,7 +1,7 @@
 import React from "react";
-import "../PhotoPost.css";
+import "../CSS/ImagePost.css";
 
-const PhotoPost = () => {
+const ImagePost = () => {
   return (
     <>
       <div className="photo">
@@ -60,4 +60,4 @@ const PhotoPost = () => {
   );
 };
 
-export default PhotoPost;
+export default ImagePost;
