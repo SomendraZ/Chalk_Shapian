@@ -1,6 +1,7 @@
 import React from "react";
-import "../SignUp.css";
-import Gif from "./Resources/Chalk_Shapian.gif";
+import { Link } from "react-router-dom";
+import "../CSS/SignUp.css";
+import Gif from "../Resources/Chalk_Shapian.gif";
 
 const SignUp = () => {
   return (
@@ -16,7 +17,7 @@ const SignUp = () => {
               <div className="chalkNameSignUp">CHALK NAME</div>
               <div className="red">*</div>
             </div>
-            <input id="chalkNameSignUp" placeholder="Chalk Name" />
+            <input id="chalkNameSignUp" placeholder="User Name" />
             <div className="flexRow">
               <div className="nameSignUp">NAME</div>
               <div className="red">*</div>
@@ -45,7 +46,7 @@ const SignUp = () => {
             </div>
             <div className="alreadyAccount">
               <div className="already">Already have a account ?</div>
-              <div className="login">Login</div>
+              <Link className="login" to="/Login" >Login</Link>
             </div>
           </div>
         </div>

@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-import Chalk from "./Resources/chalk_shapian.PNG";
-import Profile from "./Resources/profile.png";
-import "../Navbar.css";
+import { Link } from "react-router-dom";
+import Chalk from "../Resources/chalk_shapian.PNG";
+import Profile from "../Resources/profile.png";
+import "../CSS/Navbar.css";
 
 const Navbar = () => {
-  const [style1, setStyle1] = useState("cont1");
-  const [style2, setStyle2] = useState("cont2");
-  const changeStyle1 = () => {
-    setStyle1("cont1");
-    setStyle2("cont2");
+  const [StyleDiscover, setStyleDiscover] = useState("contDiscover");
+  const [StyleForum, setStyleForum] = useState("contForum");
+  const changeStyleDiscover = () => {
+    setStyleDiscover("contDiscover");
+    setStyleForum("contForum");
   };
-  const changeStyle2 = () => {
-    setStyle1("cont2");
-    setStyle2("cont1");
+  const changeStyleForum = () => {
+    setStyleDiscover("contForum"); 
+    setStyleForum("contDiscover");
   };
   return (
     <>
@@ -20,16 +21,16 @@ const Navbar = () => {
         <img id="chalk" src={Chalk} alt="" />
         <div className="bar">
           <div className="disfor">
-            <div id="discover" className={style1} onClick={changeStyle1}>
+            <Link id="discover" className={StyleDiscover} onClick={changeStyleDiscover} to="/" >
               Discover
-            </div>
-            <div id="forum" className={style2} onClick={changeStyle2}>
+            </Link>
+            <div id="forum" className={StyleForum} onClick={changeStyleForum}>
               Forum
             </div>
           </div>
           <div id="profile">
             Hi,<u>SomendraZ</u> &nbsp;&nbsp;
-            <img class="profile" src={Profile} alt="" />
+            <img className="profile" src={Profile} alt="" />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import Chalk from "./Resources/chalk_shapian.PNG";
-import "../Footer.css";
+import Chalk from "../Resources/chalk_shapian.PNG";
+import "../CSS/Footer.css";
 
 const Footer = () => {
   return (
@@ -56,10 +56,10 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="hLine" />
+            <div className="hFooterLine" />
             <div id="contact">
               <div className="white">Contact us at:&nbsp;</div>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chalk.shapian@gmail.com" class="contact" target="_blank" rel="noreferrer">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chalk.shapian@gmail.com" className="contact" target="_blank" rel="noreferrer">
                 <div className="yellow">c</div>
                 <div className="green">ha</div>
                 <div className="yellow">lk</div>

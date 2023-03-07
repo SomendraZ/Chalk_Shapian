@@ -1,29 +1,32 @@
 import React, { useState } from "react";
-import ChalkArt from "./Resources/Chalk_Art.jpg";
-import "../Discover.css";
-
+import { Link } from "react-router-dom";
+import ChalkArt from "../Resources/Chalk_Art.jpg";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "../CSS/Discover.css";
 
 const Discover = () => {
-  const [style1, setStyle1] = useState("cont1");
-  const [style2, setStyle2] = useState("cont2");
-  const [style3, setStyle3] = useState("cont2");
-  const changeStyle1 = () => {
-    setStyle1("cont1");
-    setStyle2("cont2");
-    setStyle3("cont2");
+  const [StyleAll, setStyleAll] = useState("contAll");
+  const [StyleImage, setStyleImage] = useState("contVideo");
+  const [StyleVideo, setStyleVideo] = useState("contVideo");
+  const changeStyleAll = () => {
+    setStyleAll("contAll");
+    setStyleImage("contVideo");
+    setStyleVideo("contVideo");
   };
-  const changeStyle2 = () => {
-    setStyle1("cont2"); 
-    setStyle2("cont1");
-    setStyle3("cont2");
+  const changeStyleImage = () => {
+    setStyleAll("contVideo");
+    setStyleImage("contAll");
+    setStyleVideo("contVideo");
   };
-  const changeStyle3 = () => {
-    setStyle1("cont2");
-    setStyle2("cont2");
-    setStyle3("cont1");
+  const changeStyleVideo = () => {
+    setStyleAll("contVideo");
+    setStyleImage("contVideo");
+    setStyleVideo("contAll");
   };
   return (
     <>
+      <Navbar />
       <div className="discover">
         <div className="discoverBar">
           <select name="filter" className="custom-select" id="filter">
@@ -33,107 +36,110 @@ const Discover = () => {
             <option value="creativeDesign">Creative Design</option>
             <option value="faces">Faces</option>
             <option value="architectures">Architectures</option>
-            <option value="weopons">Weopons</option>
+            <option value="weapons">Weapons</option>
             <option value="others">Others</option>
             <option value="shapianSpecial">Shapian's Special</option>
           </select>
           <div className="searchBar">
             <input id="searchBox" type="search" placeholder="   Search..." />
-            <button id="searchBtn" >
-            <i class="fa fa-search" />
+            <button id="searchBtn">
+              <i className="fa fa-search" />
             </button>
           </div>
-          <div className="lol">
-            <div className={style1} id="all" onClick={changeStyle1}>
+          <div className="lola">
+            <div className={StyleAll} id="all" onClick={changeStyleAll}>
               All
             </div>
-            <div className={style2} id="photos" onClick={changeStyle2}>
+            <div className={StyleImage} id="photos" onClick={changeStyleImage}>
               Photos
-            </div> 
-            <div className={style3} id="videos" onClick={changeStyle3}>
+            </div>
+            <div className={StyleVideo} id="videos" onClick={changeStyleVideo}>
               Videos
             </div>
           </div>
         </div>
+        <Link className="float" to="/PostChalk/Image">
+          <i className="fa fa-plus my-float"></i>
+        </Link>
         <div className="content">
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
           <div className="imgContent">
-            <img src={ChalkArt} alt="" id="imgChalk"/>
+            <img src={ChalkArt} alt="" id="imgChalk" />
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
-          {/* <div className="videoContent"></div> */}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

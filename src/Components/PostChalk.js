@@ -1,34 +1,46 @@
-import React,{useState} from "react";
-import "../PostChalk.css";
-import PhotoPost from "./PhotoPost";
+import React, { useState } from "react";
+import "../CSS/PostChalk.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import ImagePost from "./ImagePost";
+import VideoPost from "./VideoPost";
+import { useNavigate } from "react-router-dom";
 
 const PostChalk = () => {
-  const [style1, setStyle1] = useState("cont1");
-  const [style2, setStyle2] = useState("cont2");
-  const changeStyle1 = () => {
-    setStyle1("cont1");
-    setStyle2("cont2");
+  const navigate = useNavigate()
+  const [isImage, setIsImage] = useState(true);
+  const [PostChalkImage, setPostChalkImage] = useState("contChalkImage");
+  const [PostChalkVideo, setPostChalkVideo] = useState("contChalkVideo");
+  const changePostChalkImage = () => {
+    setIsImage(true)
+    navigate('/PostChalk/Image')
+    setPostChalkImage("contChalkImage");
+    setPostChalkVideo("contChalkVideo");
   };
-  const changeStyle2 = () => {
-    setStyle1("cont2");
-    setStyle2("cont1");
+  const changePostChalkVideo = () => {
+    navigate('/PostChalk/Videos')
+    setIsImage(false)
+    setPostChalkImage("contChalkVideo");
+    setPostChalkVideo("contChalkImage");
   };
   return (
     <>
+    <Navbar />
       <div id="name">
         <div className="postBar">
           <div className="postYourChalk">Post Your “CHALK”</div>
-          <div className="lol">
-            <div className={style1} id="photo" onClick={changeStyle1}>
-              Photo
+          <div className="lolala">
+            <div className={PostChalkImage} id="image" onClick={changePostChalkImage}>
+              Image
             </div>
-            <div className={style2} id="video" onClick={changeStyle2}>
+            <div className={PostChalkVideo} id="video" onClick={changePostChalkVideo}>
               Video
             </div>
           </div>
         </div>
-        <PhotoPost/>
+        {isImage ? <ImagePost/> : <VideoPost/>}
       </div>
+      <Footer />
     </>
   );
 };
