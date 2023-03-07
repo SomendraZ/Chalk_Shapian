@@ -1,39 +1,46 @@
 import React, { useState } from "react";
 import "../CSS/PostChalk.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import ImagePost from "./ImagePost";
 import VideoPost from "./VideoPost";
+import { useNavigate } from "react-router-dom";
 
 const PostChalk = () => {
-  const [style111, setStyle111] = useState("cont111");
-  const [style222, setStyle222] = useState("cont222");
-  const [isImage, setIsImage] = useState(true)
-
-  const changeStyle111 = () => {
+  const navigate = useNavigate()
+  const [isImage, setIsImage] = useState(true);
+  const [PostChalkImage, setPostChalkImage] = useState("contChalkImage");
+  const [PostChalkVideo, setPostChalkVideo] = useState("contChalkVideo");
+  const changePostChalkImage = () => {
     setIsImage(true)
-    setStyle111("cont111");
-    setStyle222("cont222");
+    navigate('/PostChalk/Image')
+    setPostChalkImage("contChalkImage");
+    setPostChalkVideo("contChalkVideo");
   };
-  const changeStyle222 = () => {
+  const changePostChalkVideo = () => {
+    navigate('/PostChalk/Videos')
     setIsImage(false)
-    setStyle111("cont222");
-    setStyle222("cont111");
+    setPostChalkImage("contChalkVideo");
+    setPostChalkVideo("contChalkImage");
   };
   return (
     <>
+    <Navbar />
       <div id="name">
         <div className="postBar">
           <div className="postYourChalk">Post Your “CHALK”</div>
           <div className="lolala">
-            <div className={style111} id="image" onClick={changeStyle111}>
+            <div className={PostChalkImage} id="image" onClick={changePostChalkImage}>
               Image
             </div>
-            <div className={style222} id="video" onClick={changeStyle222}>
+            <div className={PostChalkVideo} id="video" onClick={changePostChalkVideo}>
               Video
             </div>
           </div>
         </div>
         {isImage ? <ImagePost/> : <VideoPost/>}
       </div>
+      <Footer />
     </>
   );
 };

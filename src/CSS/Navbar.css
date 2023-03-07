@@ -34,7 +34,7 @@
   .profile {
     width: 2.6vw;
   }
-  .cont1 {
+  .contDiscover {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -46,8 +46,9 @@
     border-radius: 1.1vw;
     padding: 0.2vw 1.3vw;
     cursor: pointer;
+    text-decoration: none;
   }
-  .cont2 {
+  .contForum {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -58,6 +59,7 @@
     border-radius: 1.1vw;
     padding: 0.2vw 1.3vw;
     cursor: pointer;
+    text-decoration: none;
   }
   #profile {
     display: flex;
@@ -108,7 +110,7 @@
   .profile {
     width: 4vw;
   }
-  .cont1 {
+  .contDiscover {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 3.5vw;
@@ -119,8 +121,9 @@
     border-radius: 1.1vw;
     padding: 0.2vw 1.3vw;
     cursor: pointer;
+    text-decoration: none;
   }
-  .cont2 {
+  .contForum {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 3.5vw;
@@ -130,6 +133,7 @@
     border-radius: 1.1vw;
     padding: 0.2vw 1.3vw;
     cursor: pointer;
+    text-decoration: none;
   }
   #profile {
     display: flex;

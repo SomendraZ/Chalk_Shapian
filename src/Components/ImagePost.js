@@ -25,27 +25,27 @@ const ImagePost = () => {
         </div>
         <div id="filters">Filters :</div>
         <div className="filters">
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Simple Design
           </label>
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Creative Design
           </label>
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Faces
           </label>
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Architectures
           </label>
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Weapons
           </label>
-          <label class="container">
+          <label className="container">
             <input type="checkbox" id="checkbox"/>
             Others
           </label>

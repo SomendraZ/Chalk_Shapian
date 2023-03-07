@@ -1,5 +1,5 @@
 @media only screen and (min-width: 550px) {
-  .cont11 {
+  .contAll {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -12,7 +12,7 @@
     padding: 0.2vw 1.3vw;
     cursor: pointer;
   }
-  .cont22 {
+  .contVideo {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 1.7vw;
@@ -254,7 +254,7 @@
     color: #ffffff;
     font-size: 1.7vw;
   }
-  .cont11 {
+  .contAll {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 2vw;
@@ -267,7 +267,7 @@
     padding: 0.2vw 1.3vw;
     cursor: pointer;
   }
-  .cont22 {
+  .contVideo {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 2vw;

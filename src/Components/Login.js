@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../CSS/Login.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
 
@@ -36,7 +37,7 @@ const Login = () => {
             </div>
             <div className="noAccount">
               <div className="dont">Don’t have a account ?</div>
-              <div className="signUp">Sign Up</div>
+              <Link className="signUp" to="/SignUp" >Sign Up</Link>
             </div>
           </div>
         </div>

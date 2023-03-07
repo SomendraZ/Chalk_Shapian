@@ -1,28 +1,32 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ChalkArt from "../Resources/Chalk_Art.jpg";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "../CSS/Discover.css";
 
 const Discover = () => {
-  const [style11, setStyle11] = useState("cont11");
-  const [style22, setStyle22] = useState("cont22");
-  const [style33, setStyle33] = useState("cont22");
-  const changeStyle11 = () => {
-    setStyle11("cont11");
-    setStyle22("cont22");
-    setStyle33("cont22");
+  const [StyleAll, setStyleAll] = useState("contAll");
+  const [StyleImage, setStyleImage] = useState("contVideo");
+  const [StyleVideo, setStyleVideo] = useState("contVideo");
+  const changeStyleAll = () => {
+    setStyleAll("contAll");
+    setStyleImage("contVideo");
+    setStyleVideo("contVideo");
   };
-  const changeStyle22 = () => {
-    setStyle11("cont22");
-    setStyle22("cont11");
-    setStyle33("cont22");
+  const changeStyleImage = () => {
+    setStyleAll("contVideo");
+    setStyleImage("contAll");
+    setStyleVideo("contVideo");
   };
-  const changeStyle33 = () => {
-    setStyle11("cont22");
-    setStyle22("cont22");
-    setStyle33("cont11");
+  const changeStyleVideo = () => {
+    setStyleAll("contVideo");
+    setStyleImage("contVideo");
+    setStyleVideo("contAll");
   };
   return (
     <>
+      <Navbar />
       <div className="discover">
         <div className="discoverBar">
           <select name="filter" className="custom-select" id="filter">
@@ -39,24 +43,24 @@ const Discover = () => {
           <div className="searchBar">
             <input id="searchBox" type="search" placeholder="   Search..." />
             <button id="searchBtn">
-              <i class="fa fa-search" />
+              <i className="fa fa-search" />
             </button>
           </div>
           <div className="lola">
-            <div className={style11} id="all" onClick={changeStyle11}>
+            <div className={StyleAll} id="all" onClick={changeStyleAll}>
               All
             </div>
-            <div className={style22} id="photos" onClick={changeStyle22}>
+            <div className={StyleImage} id="photos" onClick={changeStyleImage}>
               Photos
             </div>
-            <div className={style33} id="videos" onClick={changeStyle33}>
+            <div className={StyleVideo} id="videos" onClick={changeStyleVideo}>
               Videos
             </div>
           </div>
         </div>
-        <a class="float">
-          <i class="fa fa-plus my-float"></i>
-        </a>
+        <Link className="float" to="/PostChalk/Image">
+          <i className="fa fa-plus my-float"></i>
+        </Link>
         <div className="content">
           <div className="imgContent">
             <img src={ChalkArt} alt="" id="imgChalk" />
@@ -133,9 +137,9 @@ const Discover = () => {
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
-          {/* <div className="videoContent"></div> */}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
