@@ -137,6 +137,11 @@ const Discover = () => {
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
+          {/* <div className="vidContent">
+            <img src={ChalkArt} alt="" id="vidChalk" />
+            <div className="craftName">Man's Face</div>
+            <div className="artistName">SomendraZ</div>
+          </div> */}
         </div>
       </div>
       <Footer />

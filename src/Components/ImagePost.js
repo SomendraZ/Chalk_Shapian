@@ -3,6 +3,7 @@ import "../CSS/ImagePost.css";
 
 const ImagePost = () => {
   return (
+    
     <>
       <div className="photo">
         <div className="photoDetails">

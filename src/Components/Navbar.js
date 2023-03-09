@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
           </div>
           <div id="profile">
-            Hi,<u>SomendraZ</u> &nbsp;&nbsp;
+            Hi,<u>Chalk Shapian</u> &nbsp;&nbsp;
             <img className="profile" src={Profile} alt="" />
           </div>
         </div>

@@ -5,3 +5,5 @@ This is a website to Discover and Forem for Chalk sculpting/crafting users. They
 28-Feb-2023 : Made "Home", "Login" and "SignUp" Page.
 1-March-2023 : Made "Upload" Page for both "Images" and "Videos" in Front-end.
 2-March-2023 : Made react router updated in the website.
+6-March-2023 : Updated more changes in router.
+7-March-2023 : Updated some changes as requested in PR comments.

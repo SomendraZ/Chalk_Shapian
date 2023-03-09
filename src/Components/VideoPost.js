@@ -21,7 +21,7 @@ const VideoPost = () => {
             <input id="videoLink" placeholder="Video Link" />
             <div className="videoToolsUsed">Tools Used :</div>
             <input id="videoToolsUsed" placeholder="Tools Used" />
-            <div className="videoArtist">Artist Name :</div>
+            <div className="videoArtist">Artist Name :</div> 
             <input id="videoArtist" placeholder="Artist Name" />
           </div>
         </div>
