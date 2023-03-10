@@ -1,4 +1,7 @@
 @media only screen and (min-width: 550px) {
+  .video {
+    padding-top: 3vw;
+  }
   .videoDetails {
     margin-top: 3vw;
     display: flex;
@@ -137,6 +140,9 @@
   }
 }
 @media only screen and (max-width: 550px) {
+  .video {
+    padding-top: 7.5vh;
+  }
   .videoDetails {
     margin-top: 2vh;
     display: flex;

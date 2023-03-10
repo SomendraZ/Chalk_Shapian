@@ -50,15 +50,15 @@ const Discover = () => {
             <div className={StyleAll} id="all" onClick={changeStyleAll}>
               All
             </div>
-            <div className={StyleImage} id="photos" onClick={changeStyleImage}>
-              Photos
+            <div className={StyleImage} id="images" onClick={changeStyleImage}>
+              Images
             </div>
             <div className={StyleVideo} id="videos" onClick={changeStyleVideo}>
               Videos
             </div>
           </div>
         </div>
-        <Link className="float" to="/PostChalk/Image">
+        <Link className="float" to="/Discover/PostChalk/Image">
           <i className="fa fa-plus my-float"></i>
         </Link>
         <div className="content">

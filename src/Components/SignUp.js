@@ -1,9 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../CSS/SignUp.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const signup = () => {
+    localStorage.setItem('LoggedIn',true);
+    navigate("/Discover");
+  }
   return (
     <>
       <div className="bg">
@@ -38,7 +43,7 @@ const SignUp = () => {
               <div className="red">*</div>
             </div>
             <input id="confirmPasswordSignUp" placeholder="Confirm Password" />
-            <div className="SignUpBtn">SignUp</div>
+            <div className="SignUpBtn" onClick={signup}>SignUp</div>
             <div className="or">
               <div className="hLine" />
               OR
