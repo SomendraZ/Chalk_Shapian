@@ -1,9 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../CSS/SignUp.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+  const signup = () => {
+    localStorage.setItem('LoggedIn',true);
+    navigate("/Discover");
+  }
   return (
     <>
       <div className="bg">
@@ -32,13 +37,13 @@ const SignUp = () => {
               <div className="passwordSignUp">PASSWORD</div>
               <div className="red">*</div>
             </div>
-            <input id="passwordSignUp" placeholder=" Password" />
+            <input id="passwordSignUp" placeholder="Password" />
             <div className="flexRow">
               <div className="confirmPasswordSignUp">CONFIRM PASSWORD</div>
               <div className="red">*</div>
             </div>
             <input id="confirmPasswordSignUp" placeholder="Confirm Password" />
-            <div className="SignUpBtn">SignUp</div>
+            <div className="SignUpBtn" onClick={signup}>SignUp</div>
             <div className="or">
               <div className="hLine" />
               OR
@@ -56,3 +61,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+ 

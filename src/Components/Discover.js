@@ -50,8 +50,8 @@ const Discover = () => {
             <div className={StyleAll} id="all" onClick={changeStyleAll}>
               All
             </div>
-            <div className={StyleImage} id="photos" onClick={changeStyleImage}>
-              Photos
+            <div className={StyleImage} id="images" onClick={changeStyleImage}>
+              Images
             </div>
             <div className={StyleVideo} id="videos" onClick={changeStyleVideo}>
               Videos
@@ -137,6 +137,11 @@ const Discover = () => {
             <div className="craftName">Man's Face</div>
             <div className="artistName">SomendraZ</div>
           </div>
+          {/* <div className="vidContent">
+            <img src={ChalkArt} alt="" id="vidChalk" />
+            <div className="craftName">Man's Face</div>
+            <div className="artistName">SomendraZ</div>
+          </div> */}
         </div>
       </div>
       <Footer />

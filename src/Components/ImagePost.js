@@ -3,18 +3,19 @@ import "../CSS/ImagePost.css";
 
 const ImagePost = () => {
   return (
+    
     <>
-      <div className="photo">
-        <div className="photoDetails">
-          <div className="photoImage">
+      <div className="image">
+        <div className="imageDetails">
+          <div className="imageImage">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/500px-Plus_symbol.svg.png"
               alt=""
-              id="photoImage"
+              id="imageImage"
             />
             Add Image Link
           </div>
-          <div className="photoRight">
+          <div className="imageRight">
             <div className="imageTitle">Post Title :</div>
             <input id="imageTitle" placeholder="Image Title" />
             <div className="imageToolsUsed">Tools Used :</div>
@@ -51,8 +52,8 @@ const ImagePost = () => {
           </label>
         </div>
         <div className="description">
-          <div className="photoDescription">Description :</div>
-          <textarea id="photoDescription" placeholder="Description" />
+          <div className="imageDescription">Description :</div>
+          <textarea id="imageDescription" placeholder="Description" />
         </div>
         <div className="post">POST</div>
       </div>

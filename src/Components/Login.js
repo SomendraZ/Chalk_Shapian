@@ -1,9 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import "../CSS/Login.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
+let google = "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const login = () => {
+    localStorage.setItem('LoggedIn',true);
+    navigate("/Discover");
+  }
   return (
     <>
       <div className="bg">
@@ -16,12 +22,12 @@ const Login = () => {
             <div className="emailLogin">EMAIL</div>
             <input id="emailLogin" placeholder="Email" />
             <div className="passwordLogin">PASSWORD</div>
-            <input id="passwordLogin" placeholder=" Password" />
+            <input id="passwordLogin" placeholder="Password" />
             <div className="remember">
               <input type="checkbox" id="check" />
               &nbsp;Remember me
             </div>
-            <div className="loginBtn">Login</div>
+            <div className="loginBtn" onClick={login} >Login</div>
             <div className="or">
               <div className="hLine" />
               OR
@@ -29,7 +35,7 @@ const Login = () => {
             </div>
             <div className="google">
               <img
-                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                src={google}
                 alt=""
                 id="google"
               />
@@ -37,7 +43,7 @@ const Login = () => {
             </div>
             <div className="noAccount">
               <div className="dont">Don’t have a account ?</div>
-              <Link className="signUp" to="/SignUp" >Sign Up</Link>
+              <Link className="signUp" to="/SignUp">Sign Up</Link>
             </div>
           </div>
         </div>
