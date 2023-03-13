@@ -21,7 +21,7 @@ const Login = () => {
             <div className="emailLogin">EMAIL</div>
             <input id="emailLogin" placeholder="Email" />
             <div className="passwordLogin">PASSWORD</div>
-            <input id="passwordLogin" placeholder=" Password" />
+            <input id="passwordLogin" placeholder="Password" />
             <div className="remember">
               <input type="checkbox" id="check" />
               &nbsp;Remember me

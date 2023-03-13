@@ -58,7 +58,7 @@ const Discover = () => {
             </div>
           </div>
         </div>
-        <Link className="float" to="/Discover/PostChalk/Image">
+        <Link className="float" to="/PostChalk/Image">
           <i className="fa fa-plus my-float"></i>
         </Link>
         <div className="content">

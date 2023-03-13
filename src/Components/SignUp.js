@@ -37,7 +37,7 @@ const SignUp = () => {
               <div className="passwordSignUp">PASSWORD</div>
               <div className="red">*</div>
             </div>
-            <input id="passwordSignUp" placeholder=" Password" />
+            <input id="passwordSignUp" placeholder="Password" />
             <div className="flexRow">
               <div className="confirmPasswordSignUp">CONFIRM PASSWORD</div>
               <div className="red">*</div>
@@ -61,3 +61,4 @@ const SignUp = () => {
 };
 
 export default SignUp;
+ 

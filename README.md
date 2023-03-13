@@ -7,3 +7,5 @@ This is a website to Discover and Forem for Chalk sculpting/crafting users. They
 2-March-2023 : Made react router updated in the website.
 6-March-2023 : Updated more changes in router.
 7-March-2023 : Updated some changes as requested in PR comments.
+10-March-2023 : Made navbar's profile dropdown and made logout button.
+12-March-2023 : Made Forum page and connected on the Discover page andc hanged some CSS functionality in Navbar.
