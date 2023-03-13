@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useNavigate} from "react-router-dom";
 import "../CSS/Login.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
+let google = "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const Login = () => {
             </div>
             <div className="google">
               <img
-                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                src={google}
                 alt=""
                 id="google"
               />
