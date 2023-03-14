@@ -186,7 +186,7 @@
   .profile {
     width: 4vw;
   }
-  .contDiscover {
+  .contToggle {
     color: #000000;
     font-family: "Chakra Petch", sans-serif;
     font-size: 3.5vw;
@@ -199,7 +199,7 @@
     cursor: pointer;
     text-decoration: none;
   }
-  .contForum {
+  .contNotToggle {
     color: #ffffff;
     font-family: "Chakra Petch", sans-serif;
     font-size: 3.5vw;

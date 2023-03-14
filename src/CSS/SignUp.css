@@ -52,11 +52,11 @@
     width: 33vw;
     text-decoration-line: underline;
   }
-  .flexRow{
+  .flexRow {
     display: flex;
     flex-direction: row;
   }
-  .red{
+  .red {
     color: red;
     font-size: larger;
     font-weight: bold;
@@ -148,7 +148,7 @@
     cursor: pointer;
     margin-left: 0.2vw;
   }
-  .login:hover{
+  .login:hover {
     color: #0048a7;
   }
   .login:active {
@@ -214,11 +214,11 @@
     width: 75vw;
     text-decoration-line: underline;
   }
-  .flexRow{
+  .flexRow {
     display: flex;
     flex-direction: row;
   }
-  .red{
+  .red {
     font-family: "Marvel", sans-serif;
     color: red;
     font-size: 3.5vw;
@@ -311,7 +311,7 @@
     cursor: pointer;
     margin-left: 0.5vw;
   }
-  .login:hover{
+  .login:hover {
     color: #0048a7;
   }
   .login:active {
@@ -323,5 +323,4 @@
     flex-direction: row;
     margin-left: 17.5vw;
   }
-  
 }

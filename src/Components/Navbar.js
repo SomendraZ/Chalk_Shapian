@@ -24,8 +24,9 @@ const Navbar = () => {
     navigate("/Login", { replace: true });
   }
   useEffect(() => {
+    setActiveLink("Discover");
     const currentPathname = window.location.pathname;
-    if (currentPathname === "/Discover") {
+    if (currentPathname === "/Discover" && isLoggedIn) {
       setActiveLink("Discover");
     } else if (currentPathname === "/Forum" && isLoggedIn) {
       setActiveLink("Forum");
@@ -35,7 +36,7 @@ const Navbar = () => {
   function handleLinkClick(linkName) {
     if (linkName === "Forum" && isLoggedIn) {
       navigate("/Forum");
-    } else if (linkName === "Discover") {
+    } else if (linkName === "Discover" && isLoggedIn) {
       navigate("/Discover");
     }
   }
