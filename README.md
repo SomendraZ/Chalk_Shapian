@@ -10,3 +10,4 @@ This is a website to Discover and Forem for Chalk sculpting/crafting users. They
 10-March-2023 : Made navbar's profile dropdown and made logout button.
 12-March-2023 : Made Forum page and connected on the Discover page and changed some CSS functionality in Navbar.
 14-March-2023 : Made changes in Forum page.
+17-March-2023 : Started doing something in Back-End.
