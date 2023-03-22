@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <Link to="/Discover" exact>
+        <Link to="/Discover">
           <img id="chalk" src={Chalk} alt="" />
         </Link>
         <div className="bar">

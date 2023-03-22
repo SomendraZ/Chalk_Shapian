@@ -11,3 +11,5 @@ This is a website to Discover and Forem for Chalk sculpting/crafting users. They
 12-March-2023 : Made Forum page and connected on the Discover page and changed some CSS functionality in Navbar.
 14-March-2023 : Made changes in Forum page.
 17-March-2023 : Started doing something in Back-End.
+21-March-2023 : Made APIs and connected to MongoDB.
+22-March-2023 : Completed SignUp and Login Page and conneccted to database to store user information.
