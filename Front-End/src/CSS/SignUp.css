@@ -58,7 +58,7 @@
   }
   .red {
     color: red;
-    font-size: larger;
+    font-size: 2vw;
     font-weight: bold;
   }
   .chalkNameSignUp,
@@ -95,6 +95,7 @@
   .SignUpBtn {
     background: #1877f2;
     box-shadow: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+    border: none;
     border-radius: 0.4vw;
     width: 7vw;
     height: 2.5vw;
@@ -258,6 +259,7 @@
   .SignUpBtn {
     background: #1877f2;
     box-shadow: 0.4vw 0.4vw 0.4vw rgba(0, 0, 0, 0.25);
+    border: none;
     border-radius: 0.7vw;
     width: 17vw;
     height: 2.7vh;
