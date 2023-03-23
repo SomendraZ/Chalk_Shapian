@@ -14,7 +14,7 @@ const Login = () => {
     const rememberMe = document.getElementById("check").checked;
   
     try {
-      const response = await fetch("http://localhost:6969/api/user/login", {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/user/login`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

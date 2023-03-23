@@ -38,7 +38,7 @@ const SignUp = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:6969/api/user/", {
+      const response = await fetch(`${process.env.REACT_APP_API}/api/user/`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
