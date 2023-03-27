@@ -2,7 +2,8 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "../CSS/Login.css";
 import Gif from "../Resources/Chalk_Shapian.gif";
-let google =
+
+const google =
   "https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png";
 
 const Login = () => {
@@ -12,7 +13,7 @@ const Login = () => {
     const email = document.getElementById("emailLogin").value;
     const password = document.getElementById("passwordLogin").value;
     const rememberMe = document.getElementById("check").checked;
-  
+
     try {
       const response = await fetch(`${process.env.REACT_APP_API}/api/user/login`, {
         method: "POST",
@@ -21,15 +22,19 @@ const Login = () => {
         },
         body: JSON.stringify({ email, password }),
       });
-  
+
       if (response.status === 200) {
+        const userData = await response.json();
         localStorage.setItem("LoggedIn", true);
         if (rememberMe) {
           localStorage.setItem("Email", email);
-          localStorage.setItem("Password", password); // add this line
+          localStorage.setItem("Password", password);
         } else {
           localStorage.removeItem("Email");
-          localStorage.removeItem("Password"); // add this line
+          localStorage.removeItem("Password");
+        }
+        if (userData.username) {
+          localStorage.setItem("Username", userData.username);
         }
         navigate("/Discover");
       } else if (response.status === 401) {
@@ -42,6 +47,7 @@ const Login = () => {
       alert(error.message);
     }
   };
+
   return (
     <>
       <div className="bg">

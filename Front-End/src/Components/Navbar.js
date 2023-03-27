@@ -8,21 +8,28 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [activeLink, setActiveLink] = useState("");
   const [open, setOpen] = useState(false);
+  const [username, setUsername] = useState("");
   const isLoggedIn = localStorage.getItem("LoggedIn") === "true";
 
   useEffect(() => {
     const currentPathname = window.location.pathname;
-    if (currentPathname === "/Discover" || currentPathname === "/Forum" || currentPathname === "/PostChalk/Image" || currentPathname === "/PostChalk/Videos") {
-      if(!isLoggedIn)
-      navigate("/Login", { replace: true });
+    if (
+      currentPathname === "/Discover" ||
+      currentPathname === "/Forum" ||
+      currentPathname === "/PostChalk/Image" ||
+      currentPathname === "/PostChalk/Videos"
+    ) {
+      if (!isLoggedIn) navigate("/Login", { replace: true });
     }
   }, [isLoggedIn, navigate]);
 
   function logout() {
     localStorage.setItem("LoggedIn", "false");
+    localStorage.removeItem("Username");
     setOpen(false);
     navigate("/Login", { replace: true });
   }
+
   useEffect(() => {
     setActiveLink("Discover");
     const currentPathname = window.location.pathname;
@@ -32,6 +39,11 @@ const Navbar = () => {
       setActiveLink("Forum");
     }
   }, [isLoggedIn]);
+
+  useEffect(() => {
+    const user = localStorage.getItem("Username");
+    setUsername(user);
+  }, []);
 
   function handleLinkClick(linkName) {
     if (linkName === "Forum" && isLoggedIn) {
@@ -78,8 +90,12 @@ const Navbar = () => {
             )}
           </div>
           <div id="profile" onClick={profileOpen}>
-            Hi,<u>Chalk Shapian</u> &nbsp;&nbsp;
-            <img className="profile" src={Profile} alt="" />
+            {isLoggedIn && (
+              <>
+                Hi,&nbsp;<u>{username}</u>&nbsp;&nbsp;
+                <img className="profile" src={Profile} alt="" />
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -88,13 +104,15 @@ const Navbar = () => {
           <div className="closeProfile" onClick={profileOpen}>
             X
           </div>
-          <div className="pfl">
-            <div className="yourPosts">Your Posts</div>
-            <div className="yourLiked">Your Liked Posts</div>
-            <div className="logout" onClick={logout}>
-              Logout
+          {isLoggedIn && (
+            <div className="pfl">
+              <div className="yourPosts">Your Posts</div>
+              <div className="yourLiked">Your Liked Posts</div>
+              <div className="logout" onClick={logout}>
+                Logout
+              </div>
             </div>
-          </div>
+          )}
         </div>
       ) : null}
     </>

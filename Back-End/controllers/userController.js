@@ -54,7 +54,13 @@ const createUser = async (req, res) => {
       email,
       password: hashedPassword,
     });
-    res.status(201).json(user);
+    
+    // generate JWT token
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "1h",
+    });
+
+    res.status(201).json({ username: user.username, token });
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -112,9 +118,10 @@ const loginUser = async (req, res) => {
     expiresIn: "1h",
   });
 
-  // login successful
-  res.status(200).json({ user, token });
+  // login successful, send user object and token with username
+  res.status(200).json({ username: user.username, user: user, token });
 };
+
 
 module.exports = {
   getUsers,

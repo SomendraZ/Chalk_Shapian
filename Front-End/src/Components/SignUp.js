@@ -52,7 +52,9 @@ const SignUp = () => {
       });
     
       if (response.ok) {
+        const data = await response.json();
         localStorage.setItem("LoggedIn", "true");
+        localStorage.setItem("Username", data.username);
         navigate("/Discover");
       } else if (response.status === 409) {
         // Email or username already exists in the database
